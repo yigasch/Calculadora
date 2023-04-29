@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="main-div">
+        <section class="tela" id="tela">
+            
+        </section>
+        <section class="botoes-calculadora">
+            <div class="botoes-calculadora-linha">
+                <button class="botao-calculadora pink"  id="N7">7</button>
+                <button class="botao-calculadora pink" id="N8">8</button>
+                <button class="botao-calculadora pink" id="N9">9</button>
+                <button class="botao-calculadora diff" id="divisao" onclick="insert('/')">&divide;</button>
+                <button class="botao-calculadora diff" id="delete">&larr;</button>
+                <button class="botao-calculadora diff" id="deleteall">C</button>
+            </div>
+            <div class="botoes-calculadora-linha">
+                <button class="botao-calculadora pink" id="N4">4</button>
+                <button class="botao-calculadora pink" id="N5">5</button>
+                <button class="botao-calculadora pink" id="N6">6</button>
+                <button class="botao-calculadora diff" id="dividido" onclick="insert('*')">&times;</button>
+                <button class="botao-calculadora diff" id="p_esquerdo">(</button>
+                <button class="botao-calculadora diff" id="p_direito">)</button>
+            </div>
+            <div class="botoes-calculadora-linha">
+                <button class="botao-calculadora pink" id="N1">1</button>
+                <button class="botao-calculadora pink" id="N2">2</button>
+                <button class="botao-calculadora pink" id="N3">3</button>
+                <button class="botao-calculadora diff" id="menos"  onclick="insert('-')">&minus;</button>
+                <button class="botao-calculadora diff" id="elevado" onclick="potencia()">x<sup>2</sup></button>
+                <button class="botao-calculadora diff" id="r_quadrada" onclick="raiz()">&#8730;</button>
+            </div>
+            <div class="botoes-calculadora-linha">
+                <button class="botao-calculadora pink" id="N0">0</button>
+                <button class="botao-calculadora diff" id="ponto" onclick="insert('.')">&#46;</button>
+                <button class="botao-calculadora diff" id="porcentagem" onclick="porcentagem()">&percnt;</button>
+                <button class="botao-calculadora diff" id="mais" onclick="insert('+')">&plus;</button>
+                <button class="botao-calculadora double diff" id="igual" onclick="calcular()">&equals;</button>
+            </div>
+            <div class="power-button"> 
+                      <p><input type="radio" class="radio" name="tema" value="light" checked> Tema claro </p>
+                      <p><input type="radio" class="radio" name="tema" value="dark"> Tema escuro</p>
+            </div>    
+            <script src="script.js"></script>
+        </section>
+    </div>
+
+   
+</body>
+</html>

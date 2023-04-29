@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+/* gerais */
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #40b5eb, #ac54f4, #f456aa);
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+}
+
+
+/* parents */
+.main-div {
+    box-shadow: 0 4px 30px #2323231a;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: #ffffff4d;
+    border: 1px solid #ffffff57;
+    flex-basis: 400px;
+    height: 480px;
+    padding: 20px 35px;
+}
+
+.tela {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 330px;
+    min-height: 88px;
+}
+    
+/* especificos */
+.botoes-calculadora-linha {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 1% 3% 1%;
+}
+
+.botao-calculadora {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: #bc31a5;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #dad6d6;
+    flex-basis: 20%;
+    font-size: 24px;
+    height: 65px;
+    margin: 0 2px 0 2px;
+}
+
+.diff {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    background: #ffffffbf;
+}
+
+.double {
+    flex-basis: 40%;
+}
+
+.power-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+
+/* pseudo-classes */
+
+.botao-calculadora:hover {
+    cursor: pointer;
+}
+
+.diff:hover {
+    background-color: #b3b3b3bf;
+}
+
+.pink:hover {
+    background-color: #8f217c;
+    ;
+}
+
+/* alterações do tema */
+body.dark {
+    background: linear-gradient(320deg, #020641, #09306f, #420e6d, #641160);
+
+}
+
+section.dark {
+    background: rgba(14, 13, 13, 0.75);
+    color: rgb(225, 223, 223);
+}
+
+button.diff.dark {
+    background: rgba(14, 13, 13, 0.75);
+    color: #bbb1b1;
+}
+
+button.pink.dark {
+    background: #440c79bf;
+    color: #bbb1b1;
+}
+
+/* pseudo-classes com alteração de tema */
+button.diff.dark:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+button.pink.dark:hover {
+    background: #250344bf;
+}
